@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="./assg1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 bg-white">
+                <main>
+                    <div class="row">
+                        <h2 class="text-decoration-underline bg-dark py-4 text-center text-white">Assignment - 1</h1>
+                        <div class="col-12 p-5"> 
+                            <!-- Question 1 -->
+                            <div class="q1">
+                                <h2 class="ques mb-5">
+                                    Q1. Create an squareandcube.html page with one textbox and two buttons
+                                    (SQUARE, CUBE). Accept number in the textbox and on SQUARE button click
+                                    calculate square and on CUBE button click calculate cube of that number. Alert
+                                    the result with appropriate message.
+                                </h2>
+                                <form>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="num1" class="form-label fs-5">Enter Number 1</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="num1" id="num1" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="grp1 d-flex justify-content-center">
+                                        <button type="button" class="btn btn-primary m-4" onclick="square()">SQUARE</button>
+                                        <button type="button" class="btn btn-primary m-4" onclick="cube()">CUBE</button>
+                                    </div>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="result1" class="form-label fs-5">Result</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="result1" id="result1" class="form-control" readonly disabled>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </form>
+                            </div>
+                            <!-- Question 2 -->
+                            <div class="q2">
+                                <h2 class="ques mb-5">
+                                    Q2. Create calculator.html page and design a simple calculator given below.
+                                </h2>
+                                <form>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="num2a" class="form-label fs-5">Enter Number 1</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="num2a" id="num2a" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="num2b" class="form-label fs-5">Enter Number 2</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="num2b" id="num2b" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="grp2 mb-3">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-12 col-sm-10 col-md-11 col-lg-8 d-flex justify-content-evenly px-5">
+                                                <button type="button" class="btn mx-1 btn-primary" onclick="add()"><i class="bi bi-plus-lg"></i></button>
+                                                <button type="button" class="btn mx-1 btn-primary" onclick="subtract()"><i class="bi bi-dash-lg"></i></button>
+                                                <button type="button" class="btn mx-1 btn-primary" onclick="multiply()"><i class="bi bi-x-lg"></i></button>
+                                                <button type="button" class="btn mx-1 btn-primary" onclick="division()"><i class="bi bi-slash-lg"></i></button>
+                                                <button type="button" class="btn mx-1 btn-primary" onclick="modulus()"><i class="bi bi-percent"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="result2" class="form-label fs-5">Result</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="result2" id="result2" class="form-control" readonly disabled>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Question 3 -->
+                            <div class="q3">
+                                <h2 class="ques mb-5">
+                                    Q3. Create a swap.html page and write a JavaScript to swap two numbers (Accept
+                                    using promptbox) on button double click (ondblclick event).
+                                </h2>
+                                <form>
+                                    <div class="row justify-content-start">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="num3a" class="form-label fs-5">Enter Number 1</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" name="num3a" id="num3a" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-3">
+                                        <div class="col-1">
+                                            <button type="button" class="btn btn-primary" ondblclick="swap()">
+                                                <img src="./images/alternate-sync.svg" alt="SwapIcon" class="swapIcon">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-start">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="num3b" class="form-label fs-5">Enter Number 2</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" name="num3b" id="num3b" class="form-control mb-3">
+                                        </div>
+                                    </div>       
+                                </form>
+                            </div>
+                            <!-- Question 4 -->
+                            <div class="q4">
+                                <h2 class="ques mb-5">
+                                    Q4. Create an area.html page with one textbox and button. Accept radius in the
+                                    textbox and on button click calculate the area and circumference of circle. (Hint PI
+                                    = 3.14 Constant) (area=PI*r*r and circumference = 2*PI*r)
+                                </h2>
+                                <form>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="num4" class="form-label fs-5">Enter Radius</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="num4" id="num4" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="grp1 d-flex justify-content-center">
+                                        <button type="button" class="btn btn-primary mt-3 mb-4" onclick="area()">Calculate Area</button>
+                                    </div>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="result3" class="form-label fs-5">Area</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="result3" id="result3" class="form-control" readonly disabled>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Question 5 -->
+                            <div class="q5">
+                                <h2 class="ques mb-5">
+                                    Q5. Create a interest.html page as given below and interest.js file with 2 functions
+                                    (simpleInterest and compoundInterest) to calculate simple and compound
+                                    interest.Display result below the form in the result textbox.
+                                </h2>
+                                <form>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="pcp" class="form-label fs-5">Principal</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="pcp" id="pcp" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="tm" class="form-label fs-5">Time</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="tm" id="tm" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="rt" class="form-label fs-5">Rate</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="rt" id="rt" class="form-control mb-3">
+                                        </div>
+                                    </div>
+                                    <div class="grp1 d-flex justify-content-center">
+                                        <button type="button" class="btn btn-primary m-4" onclick="si()">Simple Interest</button>
+                                        <button type="button" class="btn btn-primary m-4" onclick="ci()">Compound Interest</button>
+                                    </div>
+                                    <div class="row justify-content-evenly">
+                                        <div class="col-md-3 col-sm-5">
+                                            <label for="result4" class="form-label fs-5">Result</label>
+                                        </div>
+                                        <div class="col-md-9 col-sm-7">
+                                            <input type="number" name="result4" id="result4" class="form-control" readonly disabled>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                
+            </div>
+            <div class="col-8 p-0 m-0">
+                <footer>
+                    <h4 class="p-4 bg-dark text-center text-white">Submited by Nischay Gadher <br> Date: 13/03/2023</h4>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assg1.js"></script>
+</body>
+</html>
